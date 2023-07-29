@@ -29,9 +29,10 @@
 		"theme": "dark"
 	},
 	"scripts": {
-		"compile": "npx tsc -p .",
-		"watch:compile": "npx tsc --watch -p .",
-		"package": "npx vsce package"
+		"compile": "tsc -p .",
+		"watch:compile": "tsc --watch -p .",
+		"package": "vsce package",
+    "build": "npm run compile && npm run package"
 	},
 	"categories": [
 		"Programming Languages"
