@@ -31,7 +31,7 @@
 	"scripts": {
 		"compile": "tsc -p .",
 		"watch:compile": "tsc --watch -p .",
-		"package": "vsce package",
+		"package": "vsce package --no-dependencies",
     "build": "npm run compile && npm run package"
 	},
 	"categories": [
@@ -176,7 +176,7 @@
 		"@types/node": "7.0.43",
 		"@types/vscode": "^1.22.0",
 		"typescript": "^3.2.2",
-		"vsce": "^1.102.0",
+		"@vscode/vsce": "2.22.0",
 		"vscode-languageserver-types": "^3.6.0"
 	},
 	"dependencies": {
