@@ -8,7 +8,7 @@ class HTMLHoverProvider {
         this._htmlLanguageService = vscode_html_languageservice_1.getLanguageService();
         this._cssLanguageService = vscode_css_languageservice_1.getCSSLanguageService();
         // private _expression = /(html\s*`)([^`]*)(`)/g
-        this._expression = /(\/\*\s*html\s*\*\/\s*`|html\s*`)([^`]*)(`)/g;
+        this._expression = /(\/\*\s*html\s*\*\/\s*`|(?<!`)html\s*`)([^`]*)(`)/g;
     }
     provideHover(document, position, token) {
         const currentOffset = document.offsetAt(position);
